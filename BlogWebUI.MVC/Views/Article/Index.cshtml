@@ -1,0 +1,34 @@
+﻿@model List<BlogWebUI.Entities.Concrete.Article>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Article Index</h2>
+<table class="table table-striped" id="tblArticles">
+    <thead>
+    <tr>
+        <th style="width: 25%">Yazar</th>
+        <th>Başlık</th>
+        <th style="width: 25%">Oluşturulma Tarihi</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var makale in Model)
+    {
+        <tr>
+            <td>
+                <i class="fa fa-user" style="margin-right: 5px"></i>
+                <a href="" style="text-decoration: none;color: inherit">@makale.User.Name</a>
+            </td>
+            <td>
+                @makale.Title
+            </td>
+            <td>
+                @makale.CreateDate.ToLongTimeString()
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
