@@ -1,1 +1,3 @@
- *.* linguist-language=csharp
+*    text=auto
+
+*.cs text diff=csharp
