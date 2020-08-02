@@ -1,6 +1,3 @@
-# BlogWebUI
-BlogWebUI application is based by ASP.NET MVC.
+# BlogWeb
 
-This is my first project in Github.
-
-This is just beginning. 
+ASP.NET MVC tabanli bir web uygulamasıdır.
